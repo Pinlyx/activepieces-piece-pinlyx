@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "target": "es2021",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "lib": ["es2022", "dom"],
+    "noEmit": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "types": ["node"],
+    "baseUrl": ".",
+    "paths": {
+      "@activepieces/core-utils": [".activepieces/packages/core/utils/src/index.ts"],
+      "@activepieces/core-piece-types": [".activepieces/packages/core/piece-types/src/index.ts"],
+      "@activepieces/core-formula": [".activepieces/packages/core/formula/src/index.ts"],
+      "@activepieces/core-execution": [".activepieces/packages/core/execution/src/index.ts"],
+      "@activepieces/pieces-framework": [".activepieces/packages/pieces/framework/src/index.ts"],
+      "@activepieces/pieces-common": [".activepieces/packages/pieces/common/src/index.ts"],
+      "*": ["node_modules/*", "node_modules/@types/*"]
+    }
+  },
+  "include": ["src/**/*.ts"]
+}
